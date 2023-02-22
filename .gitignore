@@ -14,5 +14,47 @@
 # Dependency directories (remove the comment below to include it)
 # vendor/
 
-output/
+pdf-service/output/
+pdf-service/input/
 
+
+# Compiled output
+front-end/web/dist
+front-end/web//tmp
+front-end/web//out-tsc
+front-end/web//bazel-out
+
+# Node
+front-end/web//node_modules
+front-end/web/npm-debug.log
+front-end/web/yarn-error.log
+
+# IDEs and editors
+front-end/web/.idea/
+front-end/web/.project
+front-end/web/.classpath
+front-end/web/.c9/
+front-end/web/*.launch
+front-end/web/.settings/
+front-end/web/*.sublime-workspace
+
+# Visual Studio Code
+front-end/web/.vscode/*
+front-end/web/!.vscode/settings.json
+front-end/web/!.vscode/tasks.json
+front-end/web/!.vscode/launch.json
+front-end/web/!.vscode/extensions.json
+front-end/web/.history/*
+
+# Miscellaneous
+front-end/web//.angular/cache
+front-end/web/.sass-cache/
+front-end/web//connect.lock
+front-end/web//coverage
+front-end/web//libpeerconnection.log
+front-end/web/testem.log
+front-end/web//typings
+
+# System files
+front-end/web/.DS_Store
+front-end/web/Thumbs.db

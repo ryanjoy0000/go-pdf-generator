@@ -13,19 +13,17 @@
     <div class="col">
       <h4>Convert a ".txt" file to pdf</h4>
 
-      <input type="file" class="file-input"
-      (change)="handleFileInput($event)">
-
-
-
-      <!-- <form [formGroup]="fileForm" (ngSubmit)="convertUserFile()" method="post" enctype="multipart/form-data">
+      <form enctype="multipart/form-data" method="post">
         <div>
-          <input formControlName="file" type="file" id="file" name="file"/>
-        </div>
-        <div>
-          <button type="submit" class="btn btn-primary mt-2">Convert</button>
-        </div>
-      </form> -->
+          <input type="file"
+                 id="picked"
+                 #picked
+                 (change)="onPicked(picked)">
+        </div> 
+    
+      </form>
+
     </div>
   </div>
 </div>
+
