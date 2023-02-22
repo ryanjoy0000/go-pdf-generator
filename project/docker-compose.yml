@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  pdf-service:
+    build:
+      context: ./../pdf-service
+      dockerfile: ./../pdf-service/pdf-service.dockerfile
+    restart: always
+    ports:
+      - "8080:8080"
+    deploy:
+      mode: replicated
+      replicas: 1
+
+  web-service:
+    build: 
+      context: ./../front-end/web
+    ports:
+      - "80:80"
+    restart: always
+
