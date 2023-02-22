@@ -1,0 +1,31 @@
+<div class="container main-box">
+  <h3 class="title">TXT to PDF converter</h3>
+  <div class="row">
+    <div class="col br-rt">
+      <h4>Convert your text to pdf</h4>
+      <form>
+        <label for="text">Type in the text to be converted to pdf</label><br />
+        <textarea [formControl]="userText" class="form-control" id="text" rows="15"></textarea>
+        <button type="button" (click)="convertUserText($event)" class="btn btn-primary mt-2">Convert</button>
+      </form>
+    </div>
+
+    <div class="col">
+      <h4>Convert a ".txt" file to pdf</h4>
+
+      <input type="file" class="file-input"
+      (change)="handleFileInput($event)">
+
+
+
+      <!-- <form [formGroup]="fileForm" (ngSubmit)="convertUserFile()" method="post" enctype="multipart/form-data">
+        <div>
+          <input formControlName="file" type="file" id="file" name="file"/>
+        </div>
+        <div>
+          <button type="submit" class="btn btn-primary mt-2">Convert</button>
+        </div>
+      </form> -->
+    </div>
+  </div>
+</div>
